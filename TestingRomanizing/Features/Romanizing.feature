@@ -79,10 +79,14 @@ Scenario: 4000
 	Given input of 4000
 	When converted to Roman numerals
 	Then HeberSaid an ExceptionWasThrown
-#
-#	4000	*throws exception*
-#0	BLANK
-#-1	*throws exception*
-#-100	*throws exception*
+Scenario: -1
+	Given input of -1
+	When converted to Roman numerals
+	Then HeberSaid an ExceptionWasThrown
+Scenario: -100
+	Given input of -100
+	When converted to Roman numerals
+	Then HeberSaid an ExceptionWasThrown
+
 
 
